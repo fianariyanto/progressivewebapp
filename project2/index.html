@@ -1,0 +1,283 @@
+<!DOCTYPE html><html>
+<head>
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<link href="css/font-awesome.min.css" rel="stylesheet"/>
+		<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+<style>
+
+
+* {
+
+	margin:0;
+	padding: 0;
+	border: 0;
+
+
+}
+
+body {
+	background:#f5f5f5;
+	color:black;
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	text-align: j
+
+}
+
+
+
+.container {
+display: grid;
+width: 100%;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-template-rows: 90px 150px 150px 150px 30px;
+grid-gap: 4px;
+}
+
+.menubar {
+background: black;
+grid-column: 1/5;
+background-color: #562424;
+
+}
+
+#header-inner {
+	max-width: 1200px;
+	height: 
+	margin: 0 auto;
+
+}
+
+
+
+.sidebar {
+background: #924444;
+grid-row-start: 2;
+grid-row-end: 5;
+grid-column-end: 1/2;
+max-width: 1260px;
+
+
+}
+.konten {
+background: #a94c4c;
+grid-column: 2/5;
+padding: 1% 1% 1%;
+}
+
+.konten a:link, a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+.konten a:hover, a:active {
+    background-color: red;
+}
+
+
+
+.footer {
+text-align: center;
+background: #c17171;
+grid-column: 1/5;
+grid-row : 5/6;
+}
+
+
+.user-img {
+	padding: 5% 5% 5% 4%;
+    text-align: center;  
+}
+
+.user-img img {
+	height:90%;
+	width: 90%;
+	border-radius: 5px;
+	box-shadow: 0px 0px 2px #848484;
+	align-items: center;
+}
+
+.Centerer
+{
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.Centered
+{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+.social {
+		font-size: 180%;
+		
+	text-align: center;
+	}
+
+
+.social li {
+	display: inline;
+}
+
+.social i{
+	font-size:30px;
+	margin: 3 %;
+	padding: 5% 5% 5% 4%;
+	color:#C3D7DF;
+}
+
+.social i:hover {
+	color: #F5F5F5;
+}
+
+/*---Start Navigation --*/
+nav {
+	float:right;
+	padding: 25px 20px 0 0;
+
+}
+
+#menu-icon {
+	display: hidden;
+	width: 40px;
+	height: 40px;
+	background: url(images/nav.png) center;
+}
+a:hover#menu-icon {
+	border-radius: 4px 4px 0 0;
+}
+
+ul {
+	list-style-type:none;
+}
+
+nav ul li {
+	font-size:100%;
+/*	font-family: 'Alegreya',sans-serif; */
+	display: inline-block;
+	float:left;
+	padding:15px;
+}
+
+nav ul li a {
+	color: #F5F5F5;
+	text-decoration: none;
+}
+
+nav ul li a:hover {
+	color:#C3D7DF;
+}
+.current {
+	color:#C3D7DF;
+}
+
+/*-- End Navigation--*/
+
+/*--Tombol---*/
+
+@media screen and (max-width: 768px) {
+
+.container {
+display: grid;
+width: 100%;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-template-rows: 90px auto auto auto 30px;
+grid-gap: 4px;
+}
+
+
+
+	p {
+		font-size: 100%;
+	}
+	header {
+		position: absolute;
+	}
+
+	#logo {
+		margin:15px 0 20 -25px;
+		background:url(img/RD_mobile.png) no-repeat center;
+	}
+
+	#menu-icon {
+		display: inline-block;
+	}
+
+	nav ul, nav:active ul {
+		display: none;
+		z-index: 1000;
+		position: absolute;
+		padding:28px;
+		background:#6991AC;
+		right: 20px;
+		top:60px;
+		border:1px solid #FFF;
+		border-radius: 2px 0 2px 2px;
+		width: 50%;
+	}
+
+	nav:hover ul {
+		display: block;
+	}
+
+	nav li {
+		text-align: center;
+		width: 100%;
+		padding: 10px 0;
+	}
+
+</style>
+</head>
+<body>
+<div class="container">
+<div class="menubar">
+	<div id="header-inner">
+		<nav>
+			<a href="#" id="menu-icon"></a>
+			<ul>
+				<li><a href="project1/index.html" class="current">Home</a></li>
+				<li><a href="index.html">Skills</a></li>
+				<li><a href="index.html">Portfolio</a></li>
+				<li><a href="index.html">Contact</a></li>
+
+			</ul>
+		</nav>
+	</div>
+</div>
+<div class="sidebar">
+		<div class="user-img">
+			<span class="Centerer"></span>
+			<img class="Centered" src="images/avatar.jpg"> 
+		</div>
+		<div class="sosial">
+			<ul class="social">
+		
+		<li><a href="https://www.facebook.com/fian.ariyanto"><i class="fa fa-facebook"></i></a> </li>
+		<li><a href="https://www.linkedin.com/in/fianariyanto" target="_blank"><i class="fa fa-linkedin"></i></a> </li>
+		<li><a href="www.youtubecom"><i class="fa fa-youtube" target="_blank"></i></a> </li>
+		<li><a href="https://www.instagram.com/fianariyanto" target="_blank"><i class="fa fa-instagram"></i></a> </li>
+		</ul>
+		</div>
+			
+</div>
+<div class='konten'><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consequat ac felis donec et odio pellentesque diam volutpat. Diam quam nulla porttitor massa. Tellus orci ac auctor augue. Cursus euismod quis viverra nibh cras pulvinar mattis nunc sed. Sit amet volutpat consequat mauris. Volutpat ac tincidunt vitae semper quis lectus nulla. At auctor urna nunc id cursus. Sed faucibus turpis in eu mi bibendum. Bibendum ut tristique et egestas quis ipsum suspendisse ultrices.<p><a href="project1/index.html" class="current">Penjumlahan Dua Angka</a>  
+</div>
+<div class='konten'>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consequat ac felis donec et odio pellentesque diam volutpat. Diam quam nulla porttitor massa. Tellus orci ac auctor augue. Cursus euismod quis viverra nibh cras pulvinar mattis nunc sed. Sit amet volutpat consequat mauris. Volutpat ac tincidunt vitae semper quis lectus nulla.<p>
+	<a href="project1/index.html" class="current">Lokasi Istimewa dengan MapBox</a> 
+</div>
+<div class='konten'>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consequat ac felis donec et odio pellentesque diam volutpat. Diam quam nulla porttitor massa. Tellus orci ac auctor augue. Cursus euismod quis viverra nibh cras pulvinar mattis nunc sed. Sit amet volutpat consequat mauris. Volutpat ac tincidunt vitae semper quis lectus nulla.<p>
+	<a href="project1/index.html" class="current">Konten Tiga</a> </div>
+
+<div class='footer'>&copy; Fian Ariyanto</div>
+</div>
+</body>
+</html>

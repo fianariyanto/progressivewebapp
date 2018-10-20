@@ -1,0 +1,73 @@
+<!DOCTYPE html><html>
+<head>
+	<title>Fian Ariyanto</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initialscale=1.0, user-scalable=no" />
+		<link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
+		<link href="css/font-awesome.min.css" rel="stylesheet"/>
+		<link rel="stylesheet" type="text/css" href="style.css" />	
+		<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" crossorigin=""></script>
+  <script src="js/main.js"></script>
+</head>
+<body>
+<div class="container">
+<div class="menubar">
+	<div id="header-inner">
+		<nav>
+			<a href="#" id="menu-icon"></a>
+			<ul>
+				<li><a href="index.html" class="current">Home</a></li>
+				<li><a href="index.html">Skills</a></li>
+				<li><a href="index.html">Portfolio</a></li>
+				<li><a href="index.html">Contact</a></li>
+
+			</ul>
+		</nav>
+	</div>
+</div>
+<div class="sidebar">
+		<div class="user-img">
+			<img class="Centered" src="images/avatar.jpg">  
+			<span class="Centerer">
+				<h1>FIAN</h2>
+				<h1>ARIYANTO</h2>
+			</span>
+		</div>
+		<div class="sosial">
+			<ul class="social">
+		
+		<li><a href="https://www.facebook.com/fian.ariyanto"><i class="fa fa-facebook"></i></a> </li>
+		<li><a href="https://www.linkedin.com/in/fianariyanto" target="_blank"><i class="fa fa-linkedin"></i></a> </li>
+		<li><a href="www.youtubecom"><i class="fa fa-youtube" target="_blank"></i></a> </li>
+		<li><a href="https://www.instagram.com/fianariyanto" target="_blank"><i class="fa fa-instagram"></i></a> <li><a href="https://www.instagram.com/fianariyanto" target="_blank"><i class="fa fa-github"></i></a> </li>
+		</ul>
+		</div>
+			
+</div>
+<div class='konten1'>
+	<h2>Javascript</h2><p>JavaScript is a scripting or programming language that allows you to implement complex things on web pages — every time a web page does more than just sit there and display static information for you to look at — displaying timely content updates, interactive maps, animated 2D/3D graphics, scrolling video jukeboxes, etc. — you can bet that JavaScript is probably involved. It is the third layer of the layer cake of standard web technologies, two of which (HTML and CSS) we have covered in much more detail in other parts of the Learning Area.<p>
+		<br>
+		<a href="project1/index.html" class="current">Penjumlahan Dua Angka</a>  
+</div>
+<div class='konten2' id='mapid'>
+	<script>
+var mymap = L.map('mapid').setView([-8.701660,115.169856], 14);
+L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <ahref="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',maxZoom: 20,id: 'mapbox.streets',accessToken:'pk.eyJ1IjoiaWZpa2FyaWZpbiIsImEiOiJjamxndm83cTQwZjYwM3BvMHBma3dndGJqIn0.6LyWJiWv-yvp7mNPbyebYA'}).addTo(mymap);
+</script>
+</div>
+<div class='konten3'>
+	<h2>HTML5 & CSS3</h2>
+	<p>HTML5 has adopted some of the features that were present in HTML4 and even included additional features. For example, HTML5 has redefined some HTML elements like and replaced it with more ‘human-friendly’ elements such as ‘headers’, ‘footers’ and ‘sections’. There are also HTML5 APIs (Application Programming Interfaces) that enable you to add multimedia elements like audio and video. 
+	We now look at CSS, which stands for Cascading Style Sheets. CSS3 is its third and latest release. CSS revolutionized how to define the layout of webpages, most of which were built on HTML. By defining pages on a separate file called a style sheet, a great deal of consistency was brought about. All web developers had to do is to link their web pages to a given CSS file. This CSS file contains definitions for different web page elements such as headers, footers, sidebars, links, menus and even text.</div>
+
+<div class='footer'><h5>&copy;Fian Ariyanto</h5></div>
+</div>
+<script>
+var mymap = L.map('mapid').setView([-8.701660,115.169856], 14);
+L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <ahref="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',maxZoom: 20,id: 'mapbox.streets',accessToken:'pk.eyJ1IjoiaWZpa2FyaWZpbiIsImEiOiJjamxndm83cTQwZjYwM3BvMHBma3dndGJqIn0.6LyWJiWv-yvp7mNPbyebYA'}).addTo(mymap);
+</script>
+</body>
+</html>
